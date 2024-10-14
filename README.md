@@ -37,13 +37,17 @@ This project is a React application that fetches posts from the JSONPlaceholder 
    ```bash
    git clone https://github.com/omer-penso/paypal-task.git
    cd paypal-task
-2.Install dependencies:
-  ```bash
-  npm install
-3.Start the development server:
-  npm start
+2. Install dependencies:
+  `npm install`
+3. Start the development server:
+   `npm start`
 
 ## Usage
 - Open the application in your browser at http://localhost:3000.
 - Select authors from the dropdown to filter the displayed posts.
 - Use the pagination buttons to navigate through the posts.
+
+![screenShot](Screenshot%202024-10-14%20230031.png)
+![screenshot](Screenshot%202024-10-14%20230100.png)
+![screenshot](Screenshot%202024-10-14%20230114.png)
+
