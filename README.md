@@ -41,7 +41,6 @@ This project is a React application that fetches posts from the JSONPlaceholder 
   ```bash
   npm install
 3.Start the development server:
-  ```bash
   npm start
 
 ## Usage
