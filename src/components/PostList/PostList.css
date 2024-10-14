@@ -1,0 +1,35 @@
+.post-list{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 900px; 
+    margin: 0 auto;
+    padding: 0 15px;
+}
+  
+  @media (max-width: 768px) {
+    .post-list {
+        padding: 0 10px; 
+    }
+}
+
+
+  .post-list > div{
+    padding: 10px 16px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    border-bottom: 1px solid #fafafa;
+    box-shadow: 0px 4px 6px rgba(0,0,0,0.1);
+    transition: box-shadow 0.3s ease;
+}
+
+@media (max-width: 768px) {
+    .post-list > div {
+        padding: 8px 12px; 
+    }
+}
+  
+  .post-list > div:hover {
+    box-shadow: 1px 3px 5px rgba(0,0,0,0.2);
+}

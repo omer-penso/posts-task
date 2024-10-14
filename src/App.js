@@ -1,4 +1,4 @@
-import Feed from './Feed';
+import Feed from './components/Feed/Feed';
 import './App.css';
 
 function App() {

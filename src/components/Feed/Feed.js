@@ -1,22 +1,23 @@
 import React from "react";
 import Select from "react-select";
-import PostList from "./PostList";
-import useFetch from "./useFetch";
+import PostList from "../PostList/PostList";
+import useFetch from "../../hooks/useFetch";
+import "./Feed.css";
 import { useState } from "react";
 
 const Feed = () => {
     const { data: posts, loading, error } = useFetch("https://jsonplaceholder.typicode.com/posts");
     const [selectedOptions, setSelectedOptions] = useState([]);
 
-    const filteredPosts = selectedOptions.length > 0
-        ? posts.filter(post => selectedOptions.some(option => option.value === post.userId))
-        : posts;
-
     const uniqueAuthors = [...new Set(posts.map(post => post.userId))];
     const options = uniqueAuthors.map(authorID => ({
         value: authorID,
-        label: `Author ${authorID}` // Use 'label' for react-select
+        label: `Author ${authorID}` 
     }));
+
+    const filteredPosts = selectedOptions.length 
+    ? posts.filter(post => selectedOptions.some(option => option.value === post.userId))
+    : posts;
 
     const handleChange = (selectedOptions) => {
         setSelectedOptions(selectedOptions || []); 
@@ -24,13 +25,15 @@ const Feed = () => {
 
     return (
         <div className="feed">
-            <Select
+             { !loading && (<Select
                 options={options}
                 value={selectedOptions}
                 onChange={handleChange}
                 isMulti={true}
                 placeholder="Select authors..."
-            />
+                className="author-select"
+            />)}
+
             {loading && <p id="loading-text">Loading posts...</p>}
             {error && <p>{error}</p>}
             {!loading && !error && <PostList posts={filteredPosts} />}
