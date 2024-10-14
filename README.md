@@ -21,7 +21,7 @@ This project is a React application that fetches posts from the JSONPlaceholder 
   - `components/` - Contains React components for the application.
     - `Feed.js` - Main component for displaying the feed of posts.
     - `PostList.js` - Component for rendering a list of posts.
-    - `Select.js` - Component for selecting authors.
+    - `Post.js` - Component for individual posts
   - `hooks/` - Contains custom hooks.
     - `useFetch.js` - Custom hook for fetching data from APIs.
   - `styles/` - Contains CSS files for styling the components.
