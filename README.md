@@ -38,8 +38,10 @@ This project is a React application that fetches posts from the JSONPlaceholder 
    git clone https://github.com/omer-penso/paypal-task.git
    cd paypal-task
 2.Install dependencies:
+  ```bash
   npm install
 3.Start the development server:
+  ```bash
   npm start
 
 ## Usage
