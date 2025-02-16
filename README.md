@@ -35,8 +35,8 @@ This project is a React application that fetches posts from the JSONPlaceholder 
 ## Installation
 1. Clone the repository:
    ```bash
-   git clone https://github.com/omer-penso/paypal-task.git
-   cd paypal-task
+   git clone https://github.com/omer-penso/posts-task.git
+   cd posts-task
 2. Install dependencies:
   `npm install`
 3. Start the development server:
